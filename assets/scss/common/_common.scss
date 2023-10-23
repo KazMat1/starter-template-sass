@@ -1,0 +1,3 @@
+// bodyなどの基本的なスタイルを適用させます
+@use "../global/setting/variable" as v;
+@use "../global/mixin/media-query" as mq;

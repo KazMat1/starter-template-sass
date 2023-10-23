@@ -1,0 +1,14 @@
+@use "./media-query" as mq;
+
+@mixin br-sp {
+    display: inline;
+    @include mq.pc {
+        display: none;
+    }
+}
+@mixin br-pc {
+    display: none;
+    @include mq.pc {
+        display: inline;
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "This is starter template for static page craetion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx sass assets/scss/style.scss assets/css/style.css --watch",
+    "build": "npx sass assets/scss/style.scss assets/css/style.css --style compressed"
+  },
+  "author": "Kazuki Matsudou",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
+}

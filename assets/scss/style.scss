@@ -1,0 +1,10 @@
+// 同階層のディレクトリを@useで読み込みます
+// ディレクトリが増えた場合は、@useで追記してください
+
+// watch mode > npm run dev
+// output minified css > npm run build
+
+@use "global";
+@use "common";
+@use "pages";
+

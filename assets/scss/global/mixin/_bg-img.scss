@@ -1,0 +1,15 @@
+// background-repeat, background-position, background-sizeを引数で指定することができます。
+// $urlで指定されている画像パスは、変数定義して渡しても直接記述でも問題ないです。
+@use "./media-query" as mq;
+
+// background-img
+@mixin background-img($url-sp, $url-pc, $repeat: no-repeat, $size: cover, $position: center) {
+    background: url($url-sp) $repeat;
+    background-size: $size;
+    background-position: $position;
+    @include mq.pc {
+        background: url($url-pc) $repeat;
+        background-size: $size;
+        background-position: $position;
+    }
+}

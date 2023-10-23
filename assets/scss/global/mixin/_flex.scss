@@ -1,0 +1,46 @@
+// aling-items, flex-direction, flex-wrapを引数で指定することができます。
+@use "./media-query" as mq;
+
+// flex-box
+@mixin flex-start($align: center, $direction: row, $wrap: nowrap) {
+    display: flex;
+    justify-content: start;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+@mixin flex-center($align: center, $direction: row, $wrap: nowrap) {
+    display: flex;
+    justify-content: center;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+@mixin flex-end($align: center, $direction: row, $wrap: nowrap) {
+    display: flex;
+    justify-content: end;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+@mixin flex-between($align: center, $direction: row, $wrap: nowrap) {
+    display: flex;
+    justify-content: space-between;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+@mixin flex-evenly($align: center, $direction: row, $wrap: nowrap) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+@mixin flex-around($align: center, $direction: row, $wrap: nowrap) {
+    display: flex;
+    justify-content: space-around;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
